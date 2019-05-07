@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PULSENSOR</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="/css/styles.css"></link>
+  </head>
+  <body>
+      <nav class="navbar navbar-inverse">
+          <a class="navbar-brand" href="/">Baby Pulse Monitor</a>
+          <ul class="nav navbar-nav">
+              <li class="active">
+                  <a href="/">Home</a>
+              </li>
+              <li class="active">
+                  <a href="temp.html">Line</a>
+              </li>
+          </ul>
+          <a class="navbar-brand">
+              Akbar Ghifari (8 Bulan, Laki-laki)
+          </a>
+      </nav>
+      <!-- INI CHART -->
+    <div id='placeholder'></div>
+    <!-- BPM -->
+    <div id='heartrate_container'><span class='heart'>&hearts;</span><span id='heartrate'>0</span></div>
+  </body>
+  <!-- Socket.io library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<!-- jQuery library -->
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery.flot.js"></script> <!-- PLOT -->
+<script src="/js/pulse.js"></script>
+
+</html>
